@@ -1,7 +1,11 @@
 ---
 layout: default
-title: MyBlog
+title: My Blog
 ---
-<h2>MyBlog</h2>
-<p>我的第一篇文章</p>
-<p>{{ page.date }}</p>
+<h2>等风来</h2>
+<p>最新文章</p>
+<ul class="posts">
+    {% for post in site.posts %}
+        <li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% end for %}
+</ul>
