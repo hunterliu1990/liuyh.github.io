@@ -2,12 +2,38 @@
 layouts: jekyll-theme-cayman
 title: My Blog
 ---
-<h2>草堂笔记</h2>
-<p>最新文章</p>
-<ul class="posts">
-{% for post in site.posts %}
-  <li>
-    <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
-{% endfor %}
-</ul>
+<table width="100%">
+  <tr>
+    <td rowspan="2">
+      <div style="width:100%; heigth:100%; border-right:solid 1px #ccc; padding:5px;">
+          <h2>草堂笔记</h2>
+          <img src="http://oweoju0lh.bkt.clouddn.com/timgV5F21FV.jpg"/>
+          <p>
+              Liu Yahang<br />
+              Just a Coder<br />
+              <a href="mailTo:liuyahang1990@163.com">liuyahang1990@163.com</a>
+          </p>
+          <p>
+              <a href="https://github.com/hunterliu1990">github.com/hunterliu1990</a>
+          </p>
+      </div>
+    </td>
+    <td>
+      <div>
+          <p>最新文章</p>
+          <ul class="posts">
+          {% for post in site.posts %}
+            <li>
+              <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+          </ul>
+      </div>
+    </td>
+  </tr>
+  <tr>
+      <td align="center">
+        <div>Copyright © 2017 Powered by GXL Studio • 京ICP备00000001号</div>
+      </td>
+    </tr>
+</table>
