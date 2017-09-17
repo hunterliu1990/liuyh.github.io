@@ -13,6 +13,8 @@
           <div class="header">
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
             <a class="extra" href="/">home</a>
+            <h2>{{ page.title }}</h2>
+            {{ user.name }}&nbsp;{{ post.date | date_to_string }}发布
           </div>
 
           {{ content }}
@@ -20,15 +22,14 @@
           <div class="footer">
             <div class="contact">
               <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
+                Liu Yahang<br />
+                Just a Coder<br />
+                liuyahang1990@163.com
               </p>
             </div>
             <div class="contact">
               <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+                <a href="https://github.com/hunterliu1990">github.com/hunterliu1990</a><br />
               </p>
             </div>
           </div>
