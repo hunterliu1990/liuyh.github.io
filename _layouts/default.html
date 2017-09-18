@@ -8,33 +8,51 @@
 
     </head>
     <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-            <h2>{{ page.title }}</h2>
-            {{ page.author }}&nbsp;|&nbsp;{{ page.date | date_to_string }}发布
-            <hr/>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Liu Yahang<br />
-                Just a Coder<br />
-                liuyahang1990@163.com
-              </p>
+      <table width="100%" height="100%">
+        <tr>
+          <td rowspan="2" width="300px">
+            <div style="width:100%; height:100%; border-right:solid 1px #ccc;" align="center" vertical-align="center">
+                <h2>草堂笔记</h2>
+                <img src="http://oweoju0lh.bkt.clouddn.com/timgV5F21FV.jpg"/>
+                <p>
+                    Liu Yahang<br />
+                    Just a Coder<br />
+                    <a href="mailTo:liuyahang1990@163.com">liuyahang1990@163.com</a>
+                </p>
+                <p>
+                    <a href="https://github.com/hunterliu1990">github.com/hunterliu1990</a>
+                </p>
             </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/hunterliu1990">github.com/hunterliu1990</a>
-              </p>
-            </div>
-          </div>
-        </div>
+          </td>
+          <td>
+            <div class="site">
+              <div class="header">
+                <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+                <a class="extra" href="/">home</a>
+                <h2>{{ page.title }}</h2>
+                {{ page.author }}&nbsp;|&nbsp;{{ page.date | date_to_string }}发布
+                <hr/>
+              </div>
 
+              {{ content }}
+
+              <div class="footer">
+                <div class="contact">
+                  <p>
+                    Liu Yahang<br />
+                    Just a Coder<br />
+                    liuyahang1990@163.com
+                  </p>
+                </div>
+                <div class="contact">
+                  <p>
+                    <a href="https://github.com/hunterliu1990">github.com/hunterliu1990</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </td>
+          </tr>
+        </table>
     </body>
 </html>
